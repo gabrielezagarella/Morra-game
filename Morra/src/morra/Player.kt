@@ -5,16 +5,19 @@ package morra
  * @since 1.0
  */
 
-class Player(var name:String, var surname:String, var choice:String): Morra() {
+class Player(var name:String, var surname:String): Morra() {
     init {
         this.name = name
         this.surname = surname
-        this.choice = choice
     }
     var nikname = name + " " + surname
-    override var arg = choice
 
-    fun play() {
+    override var arg = " "
+
+    fun play(choice: String) {
+
+        arg = choice
+
         println("'***************************************'")
         println("Welcome to the game of morra ${nikname}")
         println(super.morra())

@@ -6,13 +6,13 @@ import morra.Player
  */
 
 fun main(args: Array<String>){
-    var roundOne = Player("Gabriele", "Zagarella", "paper")
-    roundOne.play()
+    var roundOne = Player("Gabriele", "Zagarella")
+    roundOne.play("paper")
 
-    var roundTwo = Player("Luca", "Rossi", "stone")
-    roundTwo.play()
+    var roundTwo = Player("Luca", "Rossi")
+    roundTwo.play( "scissor")
 
-    var roundThree = Player("Andrea", "Bianchi", "scissor")
-    roundThree.play()
+    var roundThree = Player("Andrea", "Bianchi")
+    roundThree.play("stone")
 
 }
